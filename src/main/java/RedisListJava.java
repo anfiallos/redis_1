@@ -4,7 +4,7 @@ import redis.clients.jedis.Jedis;
 public class RedisListJava {
    public static void main(String[] args) {
       //Connecting to Redis server on localhost
-
+ 
       Jedis jedis = new Jedis("localhost", 6379);
       jedis.auth("foobared");
       jedis.select(2);
